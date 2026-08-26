@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THERMACASE — Smart Active Device Cooling</title>
+  <meta name="description" content="ThermaCase uses smart Peltier cooling to keep phones and tablets cool, helping prevent slowdowns and keeping games running smoothly.">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header class="header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" id="headerLogo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="16,2 30,10 30,22 16,30 2,22 2,10" stroke="#00BFFF" stroke-width="2.5" fill="none"/>
+            <circle cx="16" cy="16" r="5" fill="#19C8FF"/>
+            <circle cx="16" cy="16" r="9" stroke="rgba(0, 191, 255, 0.4)" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <span class="brand-name">THERMACASE</span>
+      </a>
+
+      <!-- Center Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#demo" class="nav-link">Demo</a>
+        <a href="#problem" class="nav-link">Problem</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#app" class="nav-link">App</a>
+        <a href="#ecosystem" class="nav-link">Ecosystem</a>
+        <a href="#blog" class="nav-link">Guides</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Pre-Order Button & Mobile Toggle -->
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="#contact" class="btn-header" id="headerPreOrderBtn">Pre-Order</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero-section" id="home">
+    <!-- Atmospheric Background Lighting Glows -->
+    <div class="hero-bg-glow"></div>
+    <div class="hero-bg-glow-secondary"></div>
+
+    <div class="container hero-content-wrapper">
+      <!-- LEFT SIDE HERO CONTENT -->
+      <div class="hero-left">
+        <!-- Smart Active Cooling Pill Badge -->
+        <div class="section-tag">
+          <span class="dot-indicator"></span>
+          SMART ACTIVE COOLING
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="hero-title">
+          <span>Peak</span>
+          <span>Performance.</span>
+          <span class="text-gradient-cyan">Stay Cool Longer.</span>
+        </h1>
+
+        <!-- Subtitle Body Text -->
+        <p class="hero-description">
+          Phones get hot during gaming. When a phone gets too hot, it can slow down. ThermaCase uses smart Peltier cooling—a special electronic plate that draws heat away—to keep your device running fast and smooth.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="hero-ctas">
+          <a href="#contact" class="btn-primary" id="heroPreOrderBtn">
+            Pre-Order Now <span>→</span>
+          </a>
+          <a href="#features" class="btn-secondary" id="heroLearnMoreBtn">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE PRODUCT VISUAL -->
+      <div class="hero-right">
+        <div class="product-container floating-anim">
+          <div class="product-light-ring"></div>
+          <div class="product-image-wrapper">
+            <img src="assets/images/hero_product.jpg" alt="ThermaCase Smart Active Cooling System mounted on smartphone">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM HERO STATISTICS -->
+    <div class="hero-stats-wrapper">
+      <div class="container">
+        <div class="hero-stats-divider"></div>
+        <div class="hero-stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">Up to -18°C*</div>
+            <div class="stat-label">Target Cooling Drop</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">0%*</div>
+            <div class="stat-label">Target Speed Drop in Lab Tests</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">&lt; 15ms*</div>
+            <div class="stat-label">Target Sensor Response Time</div>
+          </div>
+        </div>
+        <p style="text-align: center; color: var(--text-dim); font-size: 0.78rem; margin-top: 1.25rem;">
+          *Specifications based on laboratory testing targets. Real-world results may vary depending on device model and room temperature.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SEE THERMACASE IN ACTION — VIDEO DEMO SECTION
+       ========================================== -->
+  <section class="section-padding video-section" id="demo">
+    <div class="container">
+      <div class="section-tag">
+        <span class="dot-indicator"></span>
+        PRODUCT DEMO
+      </div>
+      <h2 class="section-title">See ThermaCase in Action</h2>
+      <p class="section-subtitle">
+        See how ThermaCase helps keep your device cool during heavy use.
+      </p>
+
+      <!-- Video Player Card -->
+      <div class="video-container-card">
+        <div class="video-player-wrapper">
+          <video class="video-element" controls poster="assets/images/hero_product.jpg" preload="none">
+            <source src="assets/videos/thermacase-demo.mp4" type="video/mp4">
+            Your browser does not support HTML5 video playback.
+          </video>
+        </div>
+        <p class="video-caption">
+          See how ThermaCase helps keep your device cool during heavy use.
+        </p>
+      </div>
+
+      <!-- 5 Demonstration Steps -->
+      <div class="video-steps-grid">
+        <div class="demo-step-card">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Phone Gets Hot</h3>
+          <p class="step-desc">Phones get hot during gaming and heavy use as the processor works hard.</p>
+        </div>
+
+        <div class="demo-step-card">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Attach ThermaCase</h3>
+          <p class="step-desc">ThermaCase easily snaps onto the back of the phone with a magnetic latch.</p>
+        </div>
+
+        <div class="demo-step-card">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Fast Active Cooling</h3>
+          <p class="step-desc">ThermaCase pulls heat away from the phone using an electric cooling plate.</p>
+        </div>
+
+        <div class="demo-step-card">
+          <div class="step-number">4</div>
+          <h3 class="step-title">Smart Adjustment</h3>
+          <p class="step-desc">Smart sensors and AI help ThermaCase adjust its cooling power automatically.</p>
+        </div>
+
+        <div class="demo-step-card">
+          <div class="step-number">5</div>
+          <h3 class="step-title">Stay Cool Longer</h3>
+          <p class="step-desc">Keeps your phone cooler for longer so games stay smooth with no sudden slowdowns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROBLEM SECTION
+       ========================================== -->
+  <section class="section-padding problem-section" id="problem">
+    <div class="container">
+      <div class="section-tag">
+        <span class="dot-indicator"></span>
+        WHY PHONES GET HOT
+      </div>
+      <h2 class="section-title">When Phones Get Too Hot,<br>They Slow Down</h2>
+      <p class="section-subtitle">
+        When you play heavy games or run big apps, your phone's main computer chip works hard and makes heat. If the phone gets too hot, it automatically slows down to protect itself. This makes games lag and stutter.
+      </p>
+
+      <div class="problem-grid">
+        <!-- Card 1: Standard Smartphone -->
+        <div class="problem-card bad">
+          <span class="card-badge bad">Standard Smartphone</span>
+          <h3 class="card-h3">Trapped Heat Inside Phone</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+            Normal phones only have thin metal layers inside to spread heat. Within 10 minutes of gaming, heat builds up with nowhere to go.
+          </p>
+
+          <div class="metrics-list">
+            <div class="metric-row">
+              <span>Phone Temperature</span>
+              <span class="metric-val-bad">Gets very hot (up to 48°C)</span>
+            </div>
+            <div class="metric-row">
+              <span>Game Smoothness</span>
+              <span class="metric-val-bad">Drops from 60 FPS to 24 FPS</span>
+            </div>
+            <div class="metric-row">
+              <span>Automatic Slowdown</span>
+              <span class="metric-val-bad">Starts lagging after 8 minutes</span>
+            </div>
+            <div class="metric-row">
+              <span>Battery Health</span>
+              <span class="metric-val-bad">High heat wears out battery faster</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: ThermaCase Active Peltier Cooling -->
+        <div class="problem-card good">
+          <span class="card-badge good">ThermaCase Active Cooling</span>
+          <h3 class="card-h3">Electric Peltier Cooling Plate</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+            ThermaCase pulls heat away from the phone using Peltier cooling (a special electronic plate that creates a cold surface) and blows warm air out.
+          </p>
+
+          <div class="metrics-list">
+            <div class="metric-row">
+              <span>Target Surface Temp</span>
+              <span class="metric-val-good">Kept cool at 16°C – 22°C (Lab Target)</span>
+            </div>
+            <div class="metric-row">
+              <span>Game Smoothness</span>
+              <span class="metric-val-good">Smooth 60 to 120 FPS gaming</span>
+            </div>
+            <div class="metric-row">
+              <span>Automatic Slowdown</span>
+              <span class="metric-val-good">Designed to prevent speed drops*</span>
+            </div>
+            <div class="metric-row">
+              <span>Battery Protection</span>
+              <span class="metric-val-good">Keeps battery cool and protected</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FEATURES SECTION
+       ========================================== -->
+  <section class="section-padding features-section" id="features">
+    <div class="container">
+      <div class="section-tag">
+        <span class="dot-indicator"></span>
+        KEY FEATURES
+      </div>
+      <h2 class="section-title">Built to Keep Your Devices Cool</h2>
+      <p class="section-subtitle">
+        ThermaCase combines an electric cooling plate, a quiet airflow fan, and smart sensors into one compact case.
+      </p>
+
+      <div class="features-grid">
+        <!-- Feature 1: Smart AI Temperature Control -->
+        <div class="feature-card">
+          <div class="feature-card-image">
+            <img src="assets/images/feature_ai_control.jpg" alt="ThermaCase Smart AI Temperature Control attached to smartphone" loading="lazy">
+          </div>
+          <div class="feature-card-header">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="feature-title">Smart AI Temperature Control</h3>
+          </div>
+          <p class="feature-desc">AI (smart computer software) checks your phone temperature and automatically changes cooling strength to save battery.</p>
+        </div>
+
+        <!-- Feature 2: Peltier Cooling Plate -->
+        <div class="feature-card">
+          <div class="feature-card-image">
+            <img src="assets/images/feature_peltier_plate.jpg" alt="ThermaCase Peltier thermoelectric cooling plate layer" loading="lazy">
+          </div>
+          <div class="feature-card-header">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="feature-title">Peltier Cooling Plate</h3>
+          </div>
+          <p class="feature-desc">Peltier cooling uses electricity to make a cold surface on your phone, designed to lower contact temperature by up to -18°C in lab tests.</p>
+        </div>
+
+        <!-- Feature 3: Works with Different Devices -->
+        <div class="feature-card">
+          <div class="feature-card-image">
+            <img src="assets/images/feature_modular_devices.jpg" alt="ThermaCase modular cooling unit attached to smartphone and tablet" loading="lazy">
+          </div>
+          <div class="feature-card-header">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+            </div>
+            <h3 class="feature-title">Works with Different Devices</h3>
+          </div>
+          <p class="feature-desc">One cooling unit can work with different devices. The magnetic latch lets you move it between your phone, tablet, or gaming devices.</p>
+        </div>
+
+        <!-- Feature 4: Battery Safety Shield -->
+        <div class="feature-card">
+          <div class="feature-card-image">
+            <img src="assets/images/feature_battery_shield.jpg" alt="ThermaCase Battery Safety Shield cooling while charging" loading="lazy">
+          </div>
+          <div class="feature-card-header">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="feature-title">Battery Safety Shield</h3>
+          </div>
+          <p class="feature-desc">Helps keep your battery cool while you charge and play at the same time, keeping your battery healthy for longer.</p>
+        </div>
+
+        <!-- Feature 5: Fast Temperature Sensors -->
+        <div class="feature-card">
+          <div class="feature-card-image">
+            <img src="assets/images/feature_temp_sensors.jpg" alt="ThermaCase high-speed digital temperature sensors" loading="lazy">
+          </div>
+          <div class="feature-card-header">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3 class="feature-title">Fast Temperature Sensors</h3>
+          </div>
+          <p class="feature-desc">Smart sensors check temperature 100 times every second, with a target response time under 15 milliseconds.</p>
+        </div>
+
+        <!-- Feature 6: Quiet Airflow Fan -->
+        <div class="feature-card">
+          <div class="feature-card-image">
+            <img src="assets/images/feature_quiet_fan.jpg" alt="ThermaCase whisper-quiet aerodynamic cooling fan" loading="lazy">
+          </div>
+          <div class="feature-card-header">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </div>
+            <h3 class="feature-title">Quiet Airflow Fan</h3>
+          </div>
+          <p class="feature-desc">A special fan quietly blows hot air away (around 22dB) so it will not bother your voice calls or game sounds.</p>
+        </div>
+      </div>
+
+      <!-- Feature Spotlight Box -->
+      <div class="spotlight-box">
+        <div class="spotlight-info">
+          <div class="section-tag" style="margin-bottom: 0.75rem;">HOW IT WORKS</div>
+          <h3 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">How the Cold Plate Pulls Heat Away</h3>
+          <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+            When electricity runs through the Peltier cooling plate, one side becomes cold while the other side gets warm. The cold side touches your phone to pull heat away, while the quiet fan pushes the warm air out into the room.
+          </p>
+          <a href="#contact" class="btn-primary" style="display: inline-flex;">Pre-Order ThermaCase →</a>
+        </div>
+        <div class="spotlight-image">
+          <img src="assets/images/peltier_core.jpg" alt="ThermaCase Peltier Cooling Core Layer Breakdown">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       APP SECTION (COMPANION DASHBOARD)
+       ========================================== -->
+  <section class="section-padding app-section" id="app">
+    <div class="container">
+      <div class="section-tag">
+        <span class="dot-indicator"></span>
+        EASY APP CONTROLS
+      </div>
+      <h2 class="section-title">Control Your Cooling in Seconds</h2>
+      <p class="section-subtitle">
+        See your device temperature in real time, pick your favorite mode, or let smart sensors adjust the cooling for you.
+      </p>
+
+      <div class="app-showcase-wrapper">
+        <!-- Interactive Dashboard Simulator -->
+        <div class="dashboard-mockup">
+          <div class="dashboard-header">
+            <div class="dash-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00BFFF" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              ThermaCase App Controls
+            </div>
+            <span class="status-badge-online">CONNECTED</span>
+          </div>
+
+          <!-- Mode Selectors -->
+          <div class="mode-selector-grid">
+            <button class="mode-btn active" data-mode="gaming">Gaming Mode</button>
+            <button class="mode-btn" data-mode="productivity">Daily Mode</button>
+            <button class="mode-btn" data-mode="performance">Smart Auto Mode</button>
+          </div>
+
+          <!-- Live Temperature Readout -->
+          <div class="telemetry-display">
+            <div class="temp-gauge-container">
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Target Temperature</div>
+                <div class="temp-large" id="tempReadout">-18°C</div>
+              </div>
+              <div style="text-align: right;">
+                <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Fan Speed</div>
+                <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-white);" id="fanRpmReadout">7400 RPM</div>
+              </div>
+            </div>
+
+            <div class="temp-slider-wrap">
+              <div class="slider-label">
+                <span>Adjust Cooling Intensity</span>
+                <span>Target Cold Setting</span>
+              </div>
+              <input type="range" min="-20" max="30" value="-18" class="temp-range-input" id="tempSlider">
+            </div>
+          </div>
+
+          <!-- AI Intelligence Box -->
+          <div class="ai-suggestion-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#19C8FF" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <span id="aiSuggestionText">Gaming Mode Active: High cooling power is on to help keep your games running fast.</span>
+          </div>
+        </div>
+
+        <!-- Features Side List -->
+        <div class="app-feature-list">
+          <div class="app-feature-item">
+            <div class="app-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div>
+              <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.3rem;">Live Temperature Readings</h4>
+              <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.5;">Easily see clear temperature graphs for your phone and battery on your screen.</p>
+            </div>
+          </div>
+
+          <div class="app-feature-item">
+            <div class="app-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <div>
+              <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.3rem;">Quiet Sound Settings</h4>
+              <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.5;">Set fan speed limits so your microphone stays clear during voice calls and video streams.</p>
+            </div>
+          </div>
+
+          <div class="app-feature-item">
+            <div class="app-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </div>
+            <div>
+              <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.3rem;">Helpful Heat Alerts</h4>
+              <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.5;">Get a simple notification if your phone starts warming up during long play sessions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ECOSYSTEM SECTION
+       ========================================== -->
+  <section class="section-padding ecosystem-section" id="ecosystem">
+    <div class="container">
+      <div class="section-tag">
+        <span class="dot-indicator"></span>
+        ONE UNIT, MANY USES
+      </div>
+      <h2 class="section-title">One Cooling Unit. Fits Many Devices.</h2>
+      <p class="section-subtitle">
+        One cooling unit can work with different devices. Snap ThermaCase onto your phone, tablet, or handheld console with simple magnetic clips.
+      </p>
+
+      <div class="ecosystem-grid">
+        <div class="ecosystem-visual">
+          <img src="assets/images/ecosystem_devices.jpg" alt="ThermaCase Ecosystem showing modular cooling unit attached to phone and tablet">
+        </div>
+
+        <div class="ecosystem-cards">
+          <div class="eco-card active">
+            <div class="eco-card-title">
+              <span>Phone Magnetic Case</span>
+              <span style="color: var(--cyan-bright); font-size: 0.85rem;">AVAILABLE</span>
+            </div>
+            <p class="eco-card-desc">Fits popular iPhone and Samsung Galaxy phones, as well as top gaming phones.</p>
+          </div>
+
+          <div class="eco-card">
+            <div class="eco-card-title">
+              <span>Tablet Cooling Grip</span>
+              <span style="color: var(--cyan-bright); font-size: 0.85rem;">AVAILABLE</span>
+            </div>
+            <p class="eco-card-desc">A wider cooling attachment designed for iPads and Android tablets.</p>
+          </div>
+
+          <div class="eco-card">
+            <div class="eco-card-title">
+              <span>Handheld Console Clip</span>
+              <span style="color: var(--text-dim); font-size: 0.85rem;">COMING SOON</span>
+            </div>
+            <p class="eco-card-desc">A custom clip made for handheld gaming consoles like Steam Deck, ROG Ally, and Nintendo Switch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BLOG & THERMAL SCIENCE SECTION
+       ========================================== -->
+  <section class="section-padding blog-section" id="blog">
+    <div class="container">
+      <div class="section-tag">
+        <span class="dot-indicator"></span>
+        THERMAL SCIENCE INSIGHTS
+      </div>
+      <h2 class="section-title">Latest Thermal Science Articles</h2>
+      <p class="section-subtitle">
+        Explore the mechanics of smartphone heat, thermoelectric cooling physics, and smart temperature regulation in plain, accessible language.
+      </p>
+
+      <div class="blog-grid">
+        <!-- Article 1 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="assets/images/hero_product.jpg" alt="Why Smartphones Slow Down During Gaming" loading="lazy">
+            <div class="blog-read-time">5 Min Read</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-category-badge">HARDWARE ANALYSIS</div>
+            <h3 class="blog-h3">Why Smartphones Slow Down During Gaming</h3>
+            <p class="blog-excerpt">
+              Modern mobile games push your phone’s processor and graphics hardware to run at maximum power. Just like an engine working at high speed, this intense processing generates concentrated heat inside the chassis. Because smartphones are slim and sealed without internal fans, that heat gets trapped quickly. When internal temperatures cross safe limits, the phone automatically reduces its processor speed to prevent damage. This thermal slowdown causes sudden frame rate drops, screen lag, and sluggish touch responses right in the middle of gameplay. External active cooling draws that trapped heat away rapidly, allowing your phone to maintain smooth, sustained peak performance.
+            </p>
+            <button class="read-btn" data-article="1" aria-label="Read Full Article: Why Smartphones Slow Down During Gaming">
+              <span>Read Full Article</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="assets/images/feature_peltier_plate.jpg" alt="The Science Behind Thermoelectric Cooling" loading="lazy">
+            <div class="blog-read-time">6 Min Read</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-category-badge">THERMODYNAMICS</div>
+            <h3 class="blog-h3">The Science Behind Thermoelectric Cooling</h3>
+            <p class="blog-excerpt">
+              Unlike traditional passive phone cases or simple clip-on fans that merely circulate warm room air, thermoelectric cooling actively pumps heat away using solid-state physics. At the heart of this technology is a Peltier plate—a compact semiconductor element that reacts when electric current passes through it. The electrical flow absorbs thermal energy from one side, making it icy cold to the touch, while transferring that heat to the opposite side. A quiet fan and heatsink then expel the hot-side energy into the air. This active temperature difference pulls heat directly out of your phone, preventing thermal throttling before it begins.
+            </p>
+            <button class="read-btn" data-article="2" aria-label="Read Full Article: The Science Behind Thermoelectric Cooling">
+              <span>Read Full Article</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="assets/images/feature_ai_control.jpg" alt="How AI Makes Cooling Smarter" loading="lazy">
+            <div class="blog-read-time">5 Min Read</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-category-badge">AI ALGORITHMS</div>
+            <h3 class="blog-h3">How AI Makes Cooling Smarter</h3>
+            <p class="blog-excerpt">
+              Running an external cooling system at full blast non-stop is noisy and drains unnecessary power when your device is performing light tasks. Smart thermal management uses responsive sensors to monitor real-time temperature fluctuations across the phone. Intelligent software algorithms evaluate this sensor data to automatically adjust cooling power to match your exact activity—whether you are playing an intensive 3D title, fast-charging your battery, or casually browsing. By treating thermal management as an intelligent optimization system, smart cooling balances freezing power, battery efficiency, and whisper-quiet acoustics, delivering peak cooling only when your hardware truly demands it.
+            </p>
+            <button class="read-btn" data-article="3" aria-label="Read Full Article: How AI Makes Cooling Smarter">
+              <span>Read Full Article</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Reader Modal Overlay -->
+  <div class="modal-overlay" id="blogModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close Article">✕</button>
+      <div class="modal-header-meta">
+        <span class="modal-category" id="modalCategory"></span>
+        <span class="modal-dot">•</span>
+        <span class="modal-readtime" id="modalReadTime"></span>
+      </div>
+      <h2 id="modalTitle" class="modal-article-title"></h2>
+      <div class="modal-hero-img-wrap" id="modalHeroWrap">
+        <img id="modalHeroImg" src="" alt="Article feature banner">
+      </div>
+      <div id="modalBody" class="modal-article-body"></div>
+      <div class="modal-footer-action">
+        <button class="btn btn-secondary modal-finish-btn" id="modalFinishBtn">
+          <span>← Back to All Articles</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       CONTACT & PRE-ORDER SECTION
+       ========================================== -->
+  <section class="section-padding contact-section" id="contact">
+    <div class="container">
+      <div class="section-tag">
+        <span class="dot-indicator"></span>
+        RESERVE YOURS
+      </div>
+      <h2 class="section-title">Pre-Order ThermaCase Today</h2>
+      <p class="section-subtitle">
+        Reserve your unit today to keep your phone cool and smooth during gaming. First batch reservations are now open.
+      </p>
+
+      <div class="contact-grid">
+        <!-- Pre-Order Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem;">Reservation Form</h3>
+          <form id="orderForm">
+            <div class="form-group">
+              <label class="form-label" for="userName">Full Name</label>
+              <input type="text" id="userName" class="form-input" placeholder="e.g. Alex Mercer" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="userEmail">Email Address</label>
+              <input type="email" id="userEmail" class="form-input" placeholder="alex@domain.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="deviceSelect">Your Main Device</label>
+              <select id="deviceSelect" class="form-select" required>
+                <option value="iphone">iPhone 15 / 16 Series</option>
+                <option value="galaxy">Samsung Galaxy S23 / S24 Series</option>
+                <option value="ipad">iPad Pro / iPad Air</option>
+                <option value="other">Other Smartphone or Tablet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="editionSelect">Choose Package</label>
+              <select id="editionSelect" class="form-select">
+                <option value="core">ThermaCase Core Edition ($99)</option>
+                <option value="pro">ThermaCase Pro Bundle + Tablet Shell ($149)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+              Confirm Reservation <span>→</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Technical Specifications Table -->
+        <div class="specs-card">
+          <div>
+            <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem;">Product Specifications</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">ThermaCase Hardware Specs (Design Targets)</p>
+
+            <div class="spec-list">
+              <div class="spec-row">
+                <span class="spec-key">Cooling Method</span>
+                <span class="spec-val">Electric Peltier Cooling Plate</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Target Temperature Drop</span>
+                <span class="spec-val">Up to -18°C (Lab Test Target)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Sensor Speed</span>
+                <span class="spec-val">&lt; 15 milliseconds (Target Response)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Fan Sound Level</span>
+                <span class="spec-val">18dB – 22dB (Whisper Quiet)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Power Connection</span>
+                <span class="spec-val">Standard USB-C cable (15W)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Weight</span>
+                <span class="spec-val">88 grams (Lightweight)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">Attachment Style</span>
+                <span class="spec-val">Quick Magnetic Snap</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+            * Expected shipping begins late 2026. 2-year warranty included. Temperature and speed numbers represent laboratory test specifications. Real-world results may vary.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="brand-logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="16,2 30,10 30,22 16,30 2,22 2,10" stroke="#00BFFF" stroke-width="2.5" fill="none"/>
+              <circle cx="16" cy="16" r="5" fill="#19C8FF"/>
+            </svg>
+          </div>
+          <span class="brand-name">THERMACASE</span>
+        </div>
+        <div style="display: flex; gap: 2rem;">
+          <a href="#home">Home</a>
+          <a href="#demo">Demo</a>
+          <a href="#features">Features</a>
+          <a href="#app">App</a>
+          <a href="#contact">Pre-Order</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 ThermaCase Inc. All rights reserved. Smart electronic device cooling.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
